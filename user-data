@@ -11,12 +11,11 @@ users:
     gecos: Usuario Administrador
     groups:
       - sudo
-      - docker
     shell: /bin/bash
     sudo: ALL=(ALL) NOPASSWD:ALL
     lock_passwd: true
     ssh_authorized_keys:
-      - COLE_AQUI_SUA_CHAVE_PUBLICA
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ9PBaqbsGknqyWxKKVdgNddQDOIV3dVb7vzzNN886IF meu-usuario-cloud-init"
 
 # Instala os softwares declarativamente
 packages:
